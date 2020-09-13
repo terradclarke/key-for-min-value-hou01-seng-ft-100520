@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   min_value = 100 
-  name_hash.drop_while do |key, value|
+  name_hash.detect do |key, value|
     if value < min_value 
       min_value = value 
       value = key 
